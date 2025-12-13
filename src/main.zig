@@ -1,10 +1,10 @@
 const std = @import("std");
 const advent_of_code_2025 = @import("advent_of_code_2025");
+const day1 = @import("./day1.zig");
 
 pub fn main() !void {
-    // Prints to stderr, ignoring potential errors.
-    std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-    try advent_of_code_2025.bufferedPrint();
+    std.debug.print("--- Running Problem 1 ---\n", .{});
+    try day1.solve();
 }
 
 test "simple test" {
